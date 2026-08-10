@@ -1,4 +1,4 @@
-Adds blocks and items that help people make airports by adding, lights, blocks for runways, and more.
+Adds blocks and items like, lights, blocks for runways, and more, to help people make airports
 
 # Blocks
 
