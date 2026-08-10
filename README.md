@@ -15,4 +15,4 @@ This mod is still in alpha so it will most likely have bugs
 
 ## Credits
 
-The paint brush texture that was used in this mod was gotten from here https://github.com/malcolmriley/unused-textures which uses the creative common license.
+The paint brush texture used in this mod is from the Unused Textures repository by Malcolm Riley, used under the CC BY 4.0 License
