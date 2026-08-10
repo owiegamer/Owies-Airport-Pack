@@ -41,16 +41,16 @@ public class PaintLine extends Block {
             // then does whatever right now just prints something as a test
             LOGGER.info("Block Updated By other block of" + PaintLine.this + neighborPos + updateDir);
              if (updateDir == Direction.NORTH) {
-
+                 LOGGER.info("Was updated North");
              }
             if (updateDir == Direction.SOUTH) {
-
+                LOGGER.info("Was updated South");
             }
             if (updateDir == Direction.EAST) {
-
+                LOGGER.info("Was updated East");
             }
             if (updateDir == Direction.WEST) {
-
+                LOGGER.info("Was updated West");
             }
         }
     }

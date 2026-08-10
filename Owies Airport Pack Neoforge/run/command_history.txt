@@ -21,3 +21,4 @@
 /stop
 /time set day
 /give Dev owies_airport_pack_neoforge:paint_line_yellow
+/playsound minecraft:block.slime_block.hit

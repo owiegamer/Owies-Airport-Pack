@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "owies_airport_pack_neoforge:item/tool_paintbrush"
+  }
+}
