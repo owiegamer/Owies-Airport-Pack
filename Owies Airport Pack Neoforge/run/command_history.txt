@@ -1,0 +1,23 @@
+/give Dev owies_airport_pack_neoforge:ground_light_red
+/time set night
+/time set day
+/give o owies_airport_pack_neoforge:ground_light_green
+/give Dev owies_airport_pack_neoforge:ground_light_green
+/give Dev owies_airport_pack_neoforge:ground_light_red
+/give Dev owies_airport_pack_neoforge:ground_light_blue
+/give Dev owies_airport_pack_neoforge:ground_light_white
+/time set night
+/time set day
+/gamemode survival
+/gamemode creative
+/fill -30 -61 7 10 -61 -6 owies_airport_pack_neoforge:asphalt
+/fill -30 -61 7 30 -61 -6 owies_airport_pack_neoforge:asphalt
+/fill -30 -61 7 30 -61 -7 owies_airport_pack_neoforge:asphalt
+/time set night
+/time set day
+/fill -30 -61 7 60 -61 -7 owies_airport_pack_neoforge:asphalt
+/time set night
+/gamemode creative
+/stop
+/time set day
+/give Dev owies_airport_pack_neoforge:paint_line_yellow
