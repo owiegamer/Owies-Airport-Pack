@@ -4,6 +4,7 @@ package owiegamer.owies_airport_pack_neoforge.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
@@ -59,6 +60,22 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('S', Blocks.GLOWSTONE)
                 .define('G', Blocks.GLASS)
                 .unlockedBy("has_glowstone", has(Blocks.GLOWSTONE)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.LINEBRUSH.get())
+                .pattern("FFF")
+                .pattern("SSS")
+                .pattern(" S ")
+                .define('S', Items.STICK)
+                .define('F', Items.FEATHER)
+                .unlockedBy("has_feather", has(Items.FEATHER)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PAINTBUCKETYELLOW.get())
+                .pattern("IYI")
+                .pattern("IYI")
+                .pattern("III")
+                .define('I', Items.IRON_INGOT)
+                .define('Y', Items.YELLOW_DYE)
+                .unlockedBy("has_iron", has(Items.IRON_INGOT)).save(recipeOutput);
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(Items.BLACKSTONE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.ASPHALT, 4)
                 .unlockedBy("has_blackstone", has(Items.BLACKSTONE)).save(recipeOutput);

@@ -1,6 +1,7 @@
 package owiegamer.owies_airport_pack_neoforge.item.custom;
 
 import com.google.gson.internal.bind.JsonAdapterAnnotationTypeAdapterFactory;
+import com.mojang.logging.LogUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.protocol.game.ClientboundMoveEntityPacket;
 import net.minecraft.sounds.SoundEvent;
@@ -16,13 +17,15 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
+import org.slf4j.Logger;
 import owiegamer.owies_airport_pack_neoforge.block.ModBlocks;
 
 import java.util.Map;
 
 public class LineBrushItem extends Item {
-
+    private static final Logger LOGGER = LogUtils.getLogger();
 
     public LineBrushItem(Properties properties) {
         super(properties);
@@ -34,9 +37,17 @@ public class LineBrushItem extends Item {
         Player player = context.getPlayer();
         Block clickedBlock = level.getBlockState(context.getClickedPos()).getBlock();
 
+
        if(!level.isClientSide){
-            level.setBlockAndUpdate(context.getClickedPos().above(), ModBlocks.PAINTLINEYELLOW.get().defaultBlockState());
-         level.playSound(null, context.getClickedPos(), SoundEvents.SLIME_BLOCK_HIT, SoundSource.BLOCKS);
+
+           // this checks if you clicked on a pain bucket
+           if (clickedBlock == ModBlocks.PAINTBUCKETYELLOW.get()) {
+               LOGGER.info("Was Paint Bucket");
+           }
+           else {
+               level.setBlockAndUpdate(context.getClickedPos().above(), ModBlocks.PAINTLINEYELLOW.get().defaultBlockState());
+               level.playSound(null, context.getClickedPos(), SoundEvents.SLIME_BLOCK_HIT, SoundSource.BLOCKS);
+           }
         }
 
 

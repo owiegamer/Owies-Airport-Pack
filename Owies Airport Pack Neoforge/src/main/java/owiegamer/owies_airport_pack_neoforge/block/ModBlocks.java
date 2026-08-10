@@ -9,6 +9,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import owiegamer.owies_airport_pack_neoforge.OwiesAirportPackNeoforge;
 import owiegamer.owies_airport_pack_neoforge.block.custom.GroundLight;
+import owiegamer.owies_airport_pack_neoforge.block.custom.PaintBucketBlock;
 import owiegamer.owies_airport_pack_neoforge.block.custom.PaintLine;
 import owiegamer.owies_airport_pack_neoforge.item.ModItems;
 
@@ -72,6 +73,15 @@ import java.util.function.Supplier;
                 () -> new PaintLine(BlockBehaviour.Properties.of()
                         .strength(4f)
                         .dynamicShape()
+                        .requiresCorrectToolForDrops()
+                        .noLootTable()
+                        .sound(SoundType.STONE)));
+
+        public static final DeferredBlock<Block> PAINTBUCKETYELLOW = registerBlock("paint_bucket_yellow",
+                () -> new PaintBucketBlock(BlockBehaviour.Properties.of()
+                        .strength(4f)
+                        .dynamicShape()
+                        .noOcclusion()
                         .requiresCorrectToolForDrops()
                         .sound(SoundType.STONE)));
 

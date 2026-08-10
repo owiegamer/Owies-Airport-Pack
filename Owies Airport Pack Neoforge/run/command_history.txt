@@ -22,3 +22,5 @@
 /time set day
 /give Dev owies_airport_pack_neoforge:paint_line_yellow
 /playsound minecraft:block.slime_block.hit
+/give Dev owies_airport_pack_neoforge:paint_bucket_yellow
+/time set day
