@@ -77,6 +77,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('Y', Items.YELLOW_DYE)
                 .unlockedBy("has_iron", has(Items.IRON_INGOT)).save(recipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PAINTBUCKETWHITE.get())
+                .pattern("IYI")
+                .pattern("IYI")
+                .pattern("III")
+                .define('I', Items.IRON_INGOT)
+                .define('Y', Items.WHITE_DYE)
+                .unlockedBy("has_iron", has(Items.IRON_INGOT)).save(recipeOutput);
+
+
+
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(Items.BLACKSTONE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.ASPHALT, 4)
                 .unlockedBy("has_blackstone", has(Items.BLACKSTONE)).save(recipeOutput);
 

@@ -1,0 +1,23 @@
+{
+  "parent": "minecraft:block/block",
+  "ambientocclusion": false,
+  "textures": {
+    "all": "owies_airport_pack_neoforge:block/yellow_line_dot_texture",
+    "particle": "owies_airport_pack_neoforge:block/yellow_line_dot_texture"
+  },
+  "elements": [
+    {
+      "from": [5, 0, 0],
+      "to": [11, 0.0625, 8],
+      "shade": false,
+      "faces": {
+        "north": {"uv": [5, 5, 11, 5.0625], "texture": "#all"},
+        "east": {"uv": [5, 5, 11, 5.0625], "texture": "#all"},
+        "south": {"uv": [5, 5, 11, 5.0625], "texture": "#all"},
+        "west": {"uv": [5, 5, 11, 5.0625], "texture": "#all"},
+        "up": {"uv": [5, 5, 11, 11], "texture": "#all"},
+        "down": {"uv": [5, 5, 11, 11], "texture": "#all"}
+      }
+    }
+  ]
+}

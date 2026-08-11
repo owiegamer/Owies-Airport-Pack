@@ -18,6 +18,7 @@ import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import org.slf4j.Logger;
 import owiegamer.owies_airport_pack_neoforge.block.ModBlocks;
+import owiegamer.owies_airport_pack_neoforge.component.ModDataComponents;
 import owiegamer.owies_airport_pack_neoforge.item.ModCreativeModeTabs;
 import owiegamer.owies_airport_pack_neoforge.item.ModItems;
 
@@ -44,6 +45,7 @@ public class OwiesAirportPackNeoforge {
         // Register the Deferred Register to the mod event bus so items get registered
         ModItems.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
+        ModDataComponents.register(modEventBus);
 
 
         // Register ourselves for server and other game events we are interested in.

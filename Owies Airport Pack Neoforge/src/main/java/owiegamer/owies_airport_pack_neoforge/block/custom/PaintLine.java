@@ -1,29 +1,29 @@
 package owiegamer.owies_airport_pack_neoforge.block.custom;
 
-import com.mojang.logging.LogUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.Level;
+import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
-import net.minecraft.world.level.block.state.properties.Property;
-import net.minecraft.world.level.block.state.properties.RedstoneSide;
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.shapes.Shapes;
+import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
-import net.neoforged.fml.common.Mod;
-import org.slf4j.Logger;
 import owiegamer.owies_airport_pack_neoforge.block.ModBlocks;
 
-import static owiegamer.owies_airport_pack_neoforge.block.ModBlocks.PAINTLINEYELLOW;
-
 public class PaintLine extends Block {
-    private static final Logger LOGGER = LogUtils.getLogger();
+    private static final VoxelShape SHAPE = Block.box(0.0, 0.0, 0.0, 16.0, 0.1, 16.0);
 
+    public PaintLine(Properties properties) {
+        super(properties);
+        this.registerDefaultState(this.stateDefinition.any()
+                .setValue(BlockStateProperties.NORTH, false)
+                .setValue(BlockStateProperties.SOUTH, false)
+                .setValue(BlockStateProperties.EAST, false)
+                .setValue(BlockStateProperties.WEST, false));
+    }
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
@@ -31,32 +31,120 @@ public class PaintLine extends Block {
                 BlockStateProperties.EAST, BlockStateProperties.WEST);
     }
 
-// this checks if a neighbor has changed and stores it so it can be used later
-    public void neighborChanged(BlockState state, Level level, BlockPos pos, Block neighborBlock, BlockPos neighborPos, boolean movedByPiston) {
-        super.neighborChanged(state, level, pos, neighborBlock, neighborPos, movedByPiston);
-        Direction updateDir = Direction.getNearest(Vec3.atLowerCornerOf(neighborPos.subtract(pos)));
-
-        // This makes shore that the block is another painlineblock
-        if (neighborBlock == PaintLine.this) {
-            // then does whatever right now just prints something as a test
-            LOGGER.info("Block Updated By other block of" + PaintLine.this + neighborPos + updateDir);
-             if (updateDir == Direction.NORTH) {
-                 LOGGER.info("Was updated North");
-             }
-            if (updateDir == Direction.SOUTH) {
-                LOGGER.info("Was updated South");
-            }
-            if (updateDir == Direction.EAST) {
-                LOGGER.info("Was updated East");
-            }
-            if (updateDir == Direction.WEST) {
-                LOGGER.info("Was updated West");
-            }
-        }
+    @Override
+    public VoxelShape getCollisionShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
+        return SHAPE;
     }
 
+    @Override
+    public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
+        return SHAPE;
+    }
 
-    public PaintLine(Properties properties) {
-        super(properties);
+    @Override
+    public BlockState getStateForPlacement(BlockPlaceContext context) {
+        BlockState state = this.defaultBlockState();
+        BlockPos pos = context.getClickedPos();
+        LevelAccessor level = context.getLevel();
+        Block lineBlock = getLineBlock();
+
+        boolean north = false;
+        boolean south = false;
+        boolean east = false;
+        boolean west = false;
+
+        if (level.getBlockState(pos.north()).is(lineBlock)) {
+            north = true;
+        }
+        if (level.getBlockState(pos.south()).is(lineBlock)) {
+            south = true;
+        }
+        if (level.getBlockState(pos.east()).is(lineBlock)) {
+            east = true;
+        }
+        if (level.getBlockState(pos.west()).is(lineBlock)) {
+            west = true;
+        }
+
+        if (north) {
+            state = state.setValue(BlockStateProperties.NORTH, true);
+        } else {
+            state = state.setValue(BlockStateProperties.NORTH, false);
+        }
+
+        if (south) {
+            state = state.setValue(BlockStateProperties.SOUTH, true);
+        } else {
+            state = state.setValue(BlockStateProperties.SOUTH, false);
+        }
+
+        if (east) {
+            state = state.setValue(BlockStateProperties.EAST, true);
+        } else {
+            state = state.setValue(BlockStateProperties.EAST, false);
+        }
+
+        if (west) {
+            state = state.setValue(BlockStateProperties.WEST, true);
+        } else {
+            state = state.setValue(BlockStateProperties.WEST, false);
+        }
+
+        return state;
+    }
+
+    private Block getLineBlock() {
+        if (this == ModBlocks.PAINTLINEWHITE.get()) {
+            return ModBlocks.PAINTLINEWHITE.get();
+        }
+        return ModBlocks.PAINTLINEYELLOW.get();
+    }
+
+    @Override
+    public BlockState updateShape(BlockState state, Direction direction, BlockState neighborState, LevelAccessor level, BlockPos pos, BlockPos neighborPos) {
+        boolean north = false;
+        boolean south = false;
+        boolean east = false;
+        boolean west = false;
+        Block lineBlock = getLineBlock();
+
+        if (level.getBlockState(pos.north()).is(lineBlock)) {
+            north = true;
+        }
+        if (level.getBlockState(pos.south()).is(lineBlock)) {
+            south = true;
+        }
+        if (level.getBlockState(pos.east()).is(lineBlock)) {
+            east = true;
+        }
+        if (level.getBlockState(pos.west()).is(lineBlock)) {
+            west = true;
+        }
+
+        if (north) {
+            state = state.setValue(BlockStateProperties.NORTH, true);
+        } else {
+            state = state.setValue(BlockStateProperties.NORTH, false);
+        }
+
+        if (south) {
+            state = state.setValue(BlockStateProperties.SOUTH, true);
+        } else {
+            state = state.setValue(BlockStateProperties.SOUTH, false);
+        }
+
+        if (east) {
+            state = state.setValue(BlockStateProperties.EAST, true);
+        } else {
+            state = state.setValue(BlockStateProperties.EAST, false);
+        }
+
+        if (west) {
+            state = state.setValue(BlockStateProperties.WEST, true);
+        } else {
+            state = state.setValue(BlockStateProperties.WEST, false);
+        }
+
+        return state;
     }
 }

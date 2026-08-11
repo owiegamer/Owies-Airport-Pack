@@ -32,6 +32,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.GROUNDLIGHTWHITE.get());
         dropSelf(ModBlocks.ASPHALT.get());
         dropSelf(ModBlocks.PAINTBUCKETYELLOW.get());
+        dropSelf(ModBlocks.PAINTBUCKETWHITE.get());
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {

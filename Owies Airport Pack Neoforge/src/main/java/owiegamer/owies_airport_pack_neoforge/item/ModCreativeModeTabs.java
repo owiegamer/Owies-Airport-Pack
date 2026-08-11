@@ -28,6 +28,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.GROUNDLIGHTWHITE);
                         output.accept(ModBlocks.ASPHALT);
                         output.accept(ModItems.LINEBRUSH);
+                        output.accept(ModBlocks.PAINTBUCKETYELLOW);
+                        output.accept(ModBlocks.PAINTBUCKETWHITE);
                     }).build());
 
 

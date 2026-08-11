@@ -1,0 +1,44 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "owies_airport_pack_neoforge:block/white_paint_dot_model"
+      }
+    },
+    {
+      "when": {
+        "north": "true"
+      },
+      "apply": {
+        "model": "owies_airport_pack_neoforge:block/white_paint_line_arm"
+      }
+    },
+    {
+      "when": {
+        "south": "true"
+      },
+      "apply": {
+        "model": "owies_airport_pack_neoforge:block/white_paint_line_arm",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "east": "true"
+      },
+      "apply": {
+        "model": "owies_airport_pack_neoforge:block/white_paint_line_arm",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "west": "true"
+      },
+      "apply": {
+        "model": "owies_airport_pack_neoforge:block/white_paint_line_arm",
+        "y": 270
+      }
+    }
+  ]
+}

@@ -413,5 +413,11 @@
     },
     "done": true
   },
+  "owies_airport_pack_neoforge:recipes/misc/paint_bucket_white": {
+    "criteria": {
+      "has_iron": "2026-08-11 13:55:39 -0400"
+    },
+    "done": true
+  },
   "DataVersion": 3955
 }

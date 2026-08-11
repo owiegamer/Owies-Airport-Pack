@@ -69,15 +69,37 @@ import java.util.function.Supplier;
                         .sound(SoundType.STONE)));
 
 
-        public static final DeferredBlock<Block> PAINTLINEYELLOW = registerBlock("paint_line_yellow",
+        public static final DeferredBlock<PaintLine> PAINTLINEYELLOW = registerBlock("paint_line_yellow",
                 () -> new PaintLine(BlockBehaviour.Properties.of()
                         .strength(4f)
                         .dynamicShape()
                         .requiresCorrectToolForDrops()
                         .noLootTable()
+                        .noOcclusion()
+                        .noCollission()
+                        .instabreak()
+                        .sound(SoundType.STONE)));
+
+        public static final DeferredBlock<PaintLine> PAINTLINEWHITE = registerBlock("paint_line_white",
+                () -> new PaintLine(BlockBehaviour.Properties.of()
+                        .strength(4f)
+                        .dynamicShape()
+                        .requiresCorrectToolForDrops()
+                        .noLootTable()
+                        .noOcclusion()
+                        .noCollission()
+                        .instabreak()
                         .sound(SoundType.STONE)));
 
         public static final DeferredBlock<Block> PAINTBUCKETYELLOW = registerBlock("paint_bucket_yellow",
+                () -> new PaintBucketBlock(BlockBehaviour.Properties.of()
+                        .strength(4f)
+                        .dynamicShape()
+                        .noOcclusion()
+                        .requiresCorrectToolForDrops()
+                        .sound(SoundType.STONE)));
+
+        public static final DeferredBlock<Block> PAINTBUCKETWHITE = registerBlock("paint_bucket_white",
                 () -> new PaintBucketBlock(BlockBehaviour.Properties.of()
                         .strength(4f)
                         .dynamicShape()

@@ -24,3 +24,14 @@
 /playsound minecraft:block.slime_block.hit
 /give Dev owies_airport_pack_neoforge:paint_bucket_yellow
 /time set day
+/gamemode adventure
+/gamemode creative
+/time set day
+/gamemode survival
+/gamemode creative
+/time set night
+/time set day
+/gamemode survival
+/gamemode creative
+/time set day
+/weather clear
