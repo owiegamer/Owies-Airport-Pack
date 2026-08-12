@@ -10,5 +10,8 @@
   "item.owies_airport_pack_neoforge.line_brush": "Line Brush",
 
 
-  "creativetab.owies_airport_pack_neoforge.blocks": "Owies Airport Pack"
+  "creativetab.owies_airport_pack_neoforge.blocks": "Owies Airport Pack",
+
+  "tooltip.owies_airport_pack_neoforge.line_brush.tooltip": "§9Right Click§r on a paint bucket to set the color then §9Right Click§r on the ground to paint lines, paint color can be cleared by pressing §9Shift Right Click§r",
+  "tooltip.owies_airport_pack_neoforge.line_brush._shift": "Press §9Shift§r for more info"
 }

@@ -21,6 +21,7 @@ import owiegamer.owies_airport_pack_neoforge.block.ModBlocks;
 import owiegamer.owies_airport_pack_neoforge.component.ModDataComponents;
 import owiegamer.owies_airport_pack_neoforge.item.ModCreativeModeTabs;
 import owiegamer.owies_airport_pack_neoforge.item.ModItems;
+import owiegamer.owies_airport_pack_neoforge.utill.ModItemProperties;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(OwiesAirportPackNeoforge.MOD_ID)
@@ -82,9 +83,7 @@ public class OwiesAirportPackNeoforge {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-            // Some client setup code
-            LOGGER.info("HELLO FROM CLIENT SETUP");
-            LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+            ModItemProperties.addCustomItemProperties();
         }
     }
 }

@@ -2,6 +2,7 @@ package owiegamer.owies_airport_pack_neoforge.item.custom;
 
 import com.google.gson.internal.bind.JsonAdapterAnnotationTypeAdapterFactory;
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.protocol.game.ClientboundMoveEntityPacket;
@@ -15,6 +16,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
@@ -25,6 +27,7 @@ import org.slf4j.Logger;
 import owiegamer.owies_airport_pack_neoforge.block.ModBlocks;
 import owiegamer.owies_airport_pack_neoforge.component.ModDataComponents;
 
+import java.util.List;
 import java.util.Map;
 
 public class LineBrushItem extends Item {
@@ -114,4 +117,15 @@ public class LineBrushItem extends Item {
         return InteractionResultHolder.pass(itemstack);
     }
 
+    @Override
+    public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponets, TooltipFlag tooltipFlag)
+    {
+        if(Screen.hasShiftDown()) {
+            tooltipComponets.add(Component.translatable("tooltip.owies_airport_pack_neoforge.line_brush.tooltip"));
+        } else {
+            tooltipComponets.add(Component.translatable("tooltip.owies_airport_pack_neoforge.line_brush._shift"));
+        }
+
+        super.appendHoverText(stack, context, tooltipComponets, tooltipFlag);
+    }
 }

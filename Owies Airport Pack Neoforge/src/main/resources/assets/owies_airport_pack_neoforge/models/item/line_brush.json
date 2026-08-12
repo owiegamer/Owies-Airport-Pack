@@ -2,5 +2,19 @@
   "parent": "minecraft:item/generated",
   "textures": {
     "layer0": "owies_airport_pack_neoforge:item/tool_paintbrush"
-  }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "owies_airport_pack_neoforge:paint_type": 1
+      },
+      "model": "owies_airport_pack_neoforge:item/line_brush_yellow"
+    },
+    {
+      "predicate": {
+        "owies_airport_pack_neoforge:paint_type": 2
+      },
+      "model": "owies_airport_pack_neoforge:item/line_brush_white"
+    }
+  ]
 }
