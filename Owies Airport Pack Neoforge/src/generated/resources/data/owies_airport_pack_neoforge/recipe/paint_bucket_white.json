@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "Y": {
+      "item": "minecraft:white_dye"
+    }
+  },
+  "pattern": [
+    "IYI",
+    "IYI",
+    "III"
+  ],
+  "result": {
+    "count": 1,
+    "id": "owies_airport_pack_neoforge:paint_bucket_white"
+  }
+}
