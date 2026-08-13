@@ -1,92 +1,131 @@
-[12Aug2026 12:13:53.040] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientdev, --version, 21.1.234, --assetIndex, 17, --assetsDir, C:\\Users\\owenp\\.gradle\\caches\\neoformruntime\\assets, --gameDir, ., --fml.fmlVersion, 4.0.42, --fml.mcVersion, 1.21.1, --fml.neoForgeVersion, 21.1.234, --fml.neoFormVersion, 20240808.144430]
-[12Aug2026 12:13:53.043] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Microsoft OpenJDK 64-Bit Server VM 21.0.10+7-LTS
-[12Aug2026 12:13:53.043] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 11.0.5+main.901c6ea8 starting: java version 21.0.10 by Microsoft; OS Windows 11 arch amd64 version 10.0
-[12Aug2026 12:13:53.134] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
-[12Aug2026 12:13:53.215] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
-[12Aug2026 12:13:53.314] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
-[12Aug2026 12:13:53.400] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/C:/Users/owenp/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/2af2f021d8e02a0220dc27a7a72b4666d66d44ca/sponge-mixin-0.15.2+mixin.0.8.7.jar%23138!/ Service=ModLauncher Env=CLIENT
-[12Aug2026 12:13:53.494] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: AMD Radeon RX 7900 XT GL version 4.6.0 Core Profile Context 26.7.1.260716, ATI Technologies Inc.
-[12Aug2026 12:13:53.685] [main/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
-[12Aug2026 12:13:53.685] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/]: 
+[12Aug2026 14:56:16.341] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientdev, --version, 21.1.234, --assetIndex, 17, --assetsDir, C:\\Users\\owenp\\.gradle\\caches\\neoformruntime\\assets, --gameDir, ., --fml.fmlVersion, 4.0.42, --fml.mcVersion, 1.21.1, --fml.neoForgeVersion, 21.1.234, --fml.neoFormVersion, 20240808.144430]
+[12Aug2026 14:56:16.343] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Microsoft OpenJDK 64-Bit Server VM 21.0.10+7-LTS
+[12Aug2026 14:56:16.344] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 11.0.5+main.901c6ea8 starting: java version 21.0.10 by Microsoft; OS Windows 11 arch amd64 version 10.0
+[12Aug2026 14:56:16.435] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[12Aug2026 14:56:16.519] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
+[12Aug2026 14:56:16.614] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
+[12Aug2026 14:56:16.724] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/C:/Users/owenp/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/2af2f021d8e02a0220dc27a7a72b4666d66d44ca/sponge-mixin-0.15.2+mixin.0.8.7.jar%23138!/ Service=ModLauncher Env=CLIENT
+[12Aug2026 14:56:16.825] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: AMD Radeon RX 7900 XT GL version 4.6.0 Core Profile Context 26.7.1.260716, ATI Technologies Inc.
+[12Aug2026 14:56:17.045] [main/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
+[12Aug2026 14:56:17.046] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/]: 
      Mod List:
 		Name Version (Mod Id)
 
 		Minecraft 1.21.1 (minecraft)
 		NeoForge 21.1.234 (neoforge)
 		Owies Airport Pack Neoforge 0.2-PRERELEAS-2  (owies_airport_pack_neoforge)
-[12Aug2026 12:13:54.302] [main/INFO] [mixin/]: Compatibility level set to JAVA_21
-[12Aug2026 12:13:54.306] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientdev' with arguments [--version, 21.1.234, --gameDir, ., --assetsDir, C:\Users\owenp\.gradle\caches\neoformruntime\assets, --assetIndex, 17]
-[12Aug2026 12:13:55.716] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 229 Datafixer optimizations took 200 milliseconds
-[12Aug2026 12:13:55.831] [main/WARN] [oshi.driver.windows.perfmon.PerfmonDisabled/]: Invalid registry value type detected for PerfOS counters. Should be REG_DWORD. Ignoring: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfOS\Performance\Disable Performance Counters.
-[12Aug2026 12:13:55.858] [pool-7-thread-1/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.3).
-[12Aug2026 12:13:59.210] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[12Aug2026 12:13:59.211] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
-[12Aug2026 12:13:59.212] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[12Aug2026 12:13:59.213] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[12Aug2026 12:13:59.214] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[12Aug2026 12:13:59.294] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/owenp/OneDrive/Desktop/projects/Minecraft%20mods/Owies%20Airport%20Pack/Owies%20Airport%20Pack%20Neoforge/build/moddev/artifacts/neoforge-21.1.234.jar%23189!/assets/.mcassetsroot' uses unexpected schema
-[12Aug2026 12:13:59.295] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/owenp/OneDrive/Desktop/projects/Minecraft%20mods/Owies%20Airport%20Pack/Owies%20Airport%20Pack%20Neoforge/build/moddev/artifacts/neoforge-21.1.234.jar%23189!/data/.mcassetsroot' uses unexpected schema
-[12Aug2026 12:13:59.315] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[12Aug2026 12:13:59.319] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
-[12Aug2026 12:13:59.389] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.3+5
-[12Aug2026 12:13:59.600] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.1.234, for MC 1.21.1
-[12Aug2026 12:14:00.101] [Render thread/INFO] [net.neoforged.neoforge.gametest.GameTestHooks/]: Enabled Gametest Namespaces: [owies_airport_pack_neoforge]
-[12Aug2026 12:14:00.180] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources, mod/owies_airport_pack_neoforge, mod/neoforge
-[12Aug2026 12:14:00.185] [Worker-Main-1/INFO] [owiegamer.owies_airport_pack_neoforge.OwiesAirportPackNeoforge/]: HELLO FROM COMMON SETUP
-[12Aug2026 12:14:00.304] [Worker-Main-13/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.1.05.hex, loading
-[12Aug2026 12:14:00.337] [Worker-Main-11/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_jp_patch-15.1.05.hex, loading
-[12Aug2026 12:14:00.830] [Worker-Main-9/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Unable to load model: 'owies_airport_pack_neoforge:item/paint_line_white' referenced from: owies_airport_pack_neoforge:item/paint_line_white: java.io.FileNotFoundException: owies_airport_pack_neoforge:models/item/paint_line_white.json
-[12Aug2026 12:14:00.831] [Worker-Main-9/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Unable to load model: 'owies_airport_pack_neoforge:item/paint_line_yellow' referenced from: owies_airport_pack_neoforge:item/paint_line_yellow: java.io.FileNotFoundException: owies_airport_pack_neoforge:models/item/paint_line_yellow.json
-[12Aug2026 12:14:01.359] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
-[12Aug2026 12:14:01.359] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
-[12Aug2026 12:14:01.409] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Headphones (SteelSeries Arctis Nova 5)
-[12Aug2026 12:14:01.410] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
-[12Aug2026 12:14:01.492] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
-[12Aug2026 12:14:01.500] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
-[12Aug2026 12:14:01.500] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[12Aug2026 12:14:01.501] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[12Aug2026 12:14:01.501] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
-[12Aug2026 12:14:01.505] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[12Aug2026 12:14:01.505] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
-[12Aug2026 12:14:01.505] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[12Aug2026 12:14:01.505] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[12Aug2026 12:14:01.647] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
-[12Aug2026 12:14:01.648] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
-[12Aug2026 12:14:01.648] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[12Aug2026 12:14:01.648] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
-[12Aug2026 12:14:01.648] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
-[12Aug2026 12:14:01.669] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
-[12Aug2026 12:14:01.715] [Render thread/INFO] [net.neoforged.neoforge.client.entity.animation.json.AnimationLoader/]: Loaded 0 entity animations
-[12Aug2026 12:14:07.431] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1298 recipes
-[12Aug2026 12:14:07.608] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1407 advancements
-[12Aug2026 12:14:07.947] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.21.1
-[12Aug2026 12:14:07.947] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
-[12Aug2026 12:14:08.192] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
-[12Aug2026 12:14:08.404] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[12Aug2026 12:14:08.462] [Server thread/INFO] [net.neoforged.neoforge.server.permission.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
-[12Aug2026 12:14:08.462] [Server thread/INFO] [owiegamer.owies_airport_pack_neoforge.OwiesAirportPackNeoforge/]: HELLO from server starting
-[12Aug2026 12:14:08.464] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 266 ms
-[12Aug2026 12:14:08.542] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 12, from 10
-[12Aug2026 12:14:08.542] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
-[12Aug2026 12:14:09.109] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:7d65e844] logged in with entity id 6 at (-22.303084216144445, -59.504799122994086, -7.634763241327865)
-[12Aug2026 12:14:09.169] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
-[12Aug2026 12:14:09.294] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 77 advancements
-[12Aug2026 12:14:19.802] [Server thread/INFO] [owiegamer.owies_airport_pack_neoforge.item.custom.LineBrushItem/]: Was Paint Bucket
-[12Aug2026 12:14:22.264] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[12Aug2026 12:14:22.278] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[12Aug2026 12:14:22.284] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[12Aug2026 12:14:22.284] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[12Aug2026 12:14:22.618] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
-[12Aug2026 12:14:22.618] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
-[12Aug2026 12:14:22.627] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
-[12Aug2026 12:14:22.677] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
-[12Aug2026 12:14:22.677] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
-[12Aug2026 12:14:22.678] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
-[12Aug2026 12:14:22.728] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[12Aug2026 12:14:22.751] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[12Aug2026 12:14:22.753] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[12Aug2026 12:14:22.757] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (New World): All chunks are saved
-[12Aug2026 12:14:22.757] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[12Aug2026 12:14:22.757] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[12Aug2026 12:14:22.757] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
-[12Aug2026 12:14:23.281] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
+		WorldEdit 7.3.8+6939-7d32b45 (worldedit)
+[12Aug2026 14:56:17.713] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[12Aug2026 14:56:17.716] [main/INFO] [mixin/]: Compatibility level set to JAVA_21
+[12Aug2026 14:56:17.722] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientdev' with arguments [--version, 21.1.234, --gameDir, ., --assetsDir, C:\Users\owenp\.gradle\caches\neoformruntime\assets, --assetIndex, 17]
+[12Aug2026 14:56:17.809] [main/WARN] [mixin/]: Reference map 'worldedit-neoforge.mixins.refmap.json' for worldedit-neoforge.mixins.json could not be read. If this is a development environment you can ignore this message
+[12Aug2026 14:56:19.504] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 229 Datafixer optimizations took 330 milliseconds
+[12Aug2026 14:56:19.805] [main/WARN] [oshi.driver.windows.perfmon.PerfmonDisabled/]: Invalid registry value type detected for PerfOS counters. Should be REG_DWORD. Ignoring: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfOS\Performance\Disable Performance Counters.
+[12Aug2026 14:56:19.840] [pool-8-thread-1/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.3).
+[12Aug2026 14:56:24.038] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[12Aug2026 14:56:24.039] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[12Aug2026 14:56:24.041] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[12Aug2026 14:56:24.041] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[12Aug2026 14:56:24.042] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[12Aug2026 14:56:24.130] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/owenp/OneDrive/Desktop/projects/Minecraft%20mods/Owies%20Airport%20Pack/Owies%20Airport%20Pack%20Neoforge/build/moddev/artifacts/neoforge-21.1.234.jar%23190!/assets/.mcassetsroot' uses unexpected schema
+[12Aug2026 14:56:24.130] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/owenp/OneDrive/Desktop/projects/Minecraft%20mods/Owies%20Airport%20Pack/Owies%20Airport%20Pack%20Neoforge/build/moddev/artifacts/neoforge-21.1.234.jar%23190!/data/.mcassetsroot' uses unexpected schema
+[12Aug2026 14:56:24.157] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[12Aug2026 14:56:24.161] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[12Aug2026 14:56:24.240] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.3+5
+[12Aug2026 14:56:24.454] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.1.234, for MC 1.21.1
+[12Aug2026 14:56:24.981] [Render thread/INFO] [net.neoforged.neoforge.gametest.GameTestHooks/]: Enabled Gametest Namespaces: [owies_airport_pack_neoforge]
+[12Aug2026 14:56:25.084] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources, mod/worldedit, mod/owies_airport_pack_neoforge, mod/neoforge
+[12Aug2026 14:56:25.091] [Worker-Main-2/INFO] [owiegamer.owies_airport_pack_neoforge.OwiesAirportPackNeoforge/]: HELLO FROM COMMON SETUP
+[12Aug2026 14:56:25.238] [Worker-Main-5/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.1.05.hex, loading
+[12Aug2026 14:56:25.287] [Worker-Main-7/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_jp_patch-15.1.05.hex, loading
+[12Aug2026 14:56:25.781] [Worker-Main-8/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Unable to load model: 'owies_airport_pack_neoforge:item/paint_line_white' referenced from: owies_airport_pack_neoforge:item/paint_line_white: java.io.FileNotFoundException: owies_airport_pack_neoforge:models/item/paint_line_white.json
+[12Aug2026 14:56:25.781] [Worker-Main-8/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Unable to load model: 'owies_airport_pack_neoforge:item/paint_line_yellow' referenced from: owies_airport_pack_neoforge:item/paint_line_yellow: java.io.FileNotFoundException: owies_airport_pack_neoforge:models/item/paint_line_yellow.json
+[12Aug2026 14:56:26.074] [Worker-Main-1/INFO] [com.sk89q.worldedit.extension.platform.PlatformManager/]: Got request to register class com.sk89q.worldedit.neoforge.NeoForgePlatform with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@454f4287]
+[12Aug2026 14:56:26.077] [Worker-Main-1/INFO] [com.sk89q.worldedit.neoforge.NeoForgeWorldEdit/]: WorldEdit for NeoForge (version 7.3.8+6939-7d32b45) is loaded
+[12Aug2026 14:56:26.394] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[12Aug2026 14:56:26.394] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[12Aug2026 14:56:26.447] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Headphones (SteelSeries Arctis Nova 5)
+[12Aug2026 14:56:26.448] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[12Aug2026 14:56:26.517] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
+[12Aug2026 14:56:26.526] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[12Aug2026 14:56:26.526] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[12Aug2026 14:56:26.526] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[12Aug2026 14:56:26.527] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[12Aug2026 14:56:26.530] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[12Aug2026 14:56:26.530] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[12Aug2026 14:56:26.530] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[12Aug2026 14:56:26.530] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[12Aug2026 14:56:26.737] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[12Aug2026 14:56:26.740] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[12Aug2026 14:56:26.740] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[12Aug2026 14:56:26.741] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[12Aug2026 14:56:26.741] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
+[12Aug2026 14:56:26.767] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[12Aug2026 14:56:26.825] [Render thread/INFO] [net.neoforged.neoforge.client.entity.animation.json.AnimationLoader/]: Loaded 0 entity animations
+[12Aug2026 14:56:31.772] [Worker-Main-4/INFO] [com.sk89q.worldedit.extension.platform.PlatformCommandManager/]: Registering commands with com.sk89q.worldedit.neoforge.NeoForgePlatform
+[12Aug2026 14:56:31.945] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1298 recipes
+[12Aug2026 14:56:32.131] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1407 advancements
+[12Aug2026 14:56:32.461] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.21.1
+[12Aug2026 14:56:32.461] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[12Aug2026 14:56:32.713] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[12Aug2026 14:56:32.875] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[12Aug2026 14:56:32.920] [Server thread/INFO] [net.neoforged.neoforge.server.permission.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
+[12Aug2026 14:56:32.920] [Server thread/INFO] [owiegamer.owies_airport_pack_neoforge.OwiesAirportPackNeoforge/]: HELLO from server starting
+[12Aug2026 14:56:32.935] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 211 ms
+[12Aug2026 14:56:33.676] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 12, from 10
+[12Aug2026 14:56:33.676] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
+[12Aug2026 14:56:34.223] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:248549d3] logged in with entity id 5 at (-20.66398110846941, -61.0, 17.974154434617112)
+[12Aug2026 14:56:34.307] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[12Aug2026 14:56:34.451] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 77 advancements
+[12Aug2026 14:56:41.928] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] First position set to (-24, -61, 19).
+[12Aug2026 14:56:42.815] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Second position set to (-18, -61, 11) (63).
+[12Aug2026 14:56:48.596] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Operation completed (63 blocks affected).
+[12Aug2026 14:56:56.463] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] First position set to (-24, -61, 20) (70).
+[12Aug2026 14:56:58.563] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Second position set to (-18, -61, 26) (49).
+[12Aug2026 14:56:59.868] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Operation completed (49 blocks affected).
+[12Aug2026 14:57:02.609] [Server thread/INFO] [owiegamer.owies_airport_pack_neoforge.item.custom.LineBrushItem/]: Was Paint Bucket
+[12Aug2026 14:57:29.454] [Server thread/INFO] [owiegamer.owies_airport_pack_neoforge.item.custom.LineBrushItem/]: Was Paint Bucket
+[12Aug2026 14:57:42.718] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] First position set to (-18, -61, 27) (2).
+[12Aug2026 14:57:44.917] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Second position set to (-24, -61, 34) (56).
+[12Aug2026 14:57:46.531] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Operation completed (56 blocks affected).
+[12Aug2026 14:57:57.268] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] First position set to (-17, -61, 28) (56).
+[12Aug2026 14:57:58.168] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Second position set to (-17, -61, 34) (7).
+[12Aug2026 14:57:58.991] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Operation completed (7 blocks affected).
+[12Aug2026 14:58:02.115] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] First position set to (-16, -61, 28) (14).
+[12Aug2026 14:58:07.917] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Second position set to (58, -61, 34) (525).
+[12Aug2026 14:58:09.310] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Operation completed (525 blocks affected).
+[12Aug2026 14:58:13.817] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] First position set to (51, -61, 27) (64).
+[12Aug2026 14:58:14.868] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Second position set to (58, -61, 27) (8).
+[12Aug2026 14:58:15.688] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Operation completed (8 blocks affected).
+[12Aug2026 14:58:21.968] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] First position set to (52, -61, 27) (7).
+[12Aug2026 14:58:25.016] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Second position set to (58, -61, 7) (147).
+[12Aug2026 14:58:26.349] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Operation completed (147 blocks affected).
+[12Aug2026 14:58:34.568] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] First position set to (55, -60, 8) (16).
+[12Aug2026 14:58:40.463] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Second position set to (55, -60, 31) (24).
+[12Aug2026 14:58:48.000] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Operation completed (24 blocks affected).
+[12Aug2026 14:58:49.263] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] First position set to (55, -60, 31) (1).
+[12Aug2026 14:58:54.714] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Second position set to (-21, -60, 31) (77).
+[12Aug2026 14:58:55.925] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Operation completed (77 blocks affected).
+[12Aug2026 14:58:56.866] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] First position set to (-21, -60, 31) (1).
+[12Aug2026 14:58:57.916] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Second position set to (-21, -60, 26) (6).
+[12Aug2026 14:58:58.894] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Operation completed (6 blocks affected).
+[12Aug2026 14:59:01.641] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set the time to 1000]
+[12Aug2026 14:59:01.649] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set the time to 1000
+[12Aug2026 14:59:21.318] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[12Aug2026 14:59:21.334] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[12Aug2026 14:59:21.344] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[12Aug2026 14:59:21.344] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[12Aug2026 14:59:21.571] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
+[12Aug2026 14:59:21.571] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[12Aug2026 14:59:21.579] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
+[12Aug2026 14:59:21.621] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[12Aug2026 14:59:21.621] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[12Aug2026 14:59:21.621] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[12Aug2026 14:59:21.728] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[12Aug2026 14:59:21.785] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[12Aug2026 14:59:21.788] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[12Aug2026 14:59:21.794] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (New World): All chunks are saved
+[12Aug2026 14:59:21.794] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[12Aug2026 14:59:21.794] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[12Aug2026 14:59:21.794] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[12Aug2026 14:59:22.754] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
