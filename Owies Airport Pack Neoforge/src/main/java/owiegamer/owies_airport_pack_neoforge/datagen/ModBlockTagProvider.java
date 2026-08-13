@@ -24,6 +24,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.GROUNDLIGHTRED.get())
                 .add(ModBlocks.GROUNDLIGHTBLUE.get())
                 .add(ModBlocks.GROUNDLIGHTWHITE.get())
+                .add(ModBlocks.PAINTBUCKETWHITE.get())
                 .add(ModBlocks.PAINTBUCKETYELLOW.get())
                 .add(ModBlocks.ASPHALT.get());
 
