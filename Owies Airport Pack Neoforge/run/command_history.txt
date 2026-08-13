@@ -39,3 +39,4 @@
 //set owies_airport_pack_neoforge:asphalt
 //set owies_airport_pack_neoforge:paint_line_yellow
 /time set day
+/give Dev owies_airport_pack_neoforge:runway_concrete

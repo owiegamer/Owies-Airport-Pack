@@ -87,6 +87,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
 
 
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Items.STONE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUNWAYCONCRETE, 4)
+                .unlockedBy("has_stone", has(Items.STONE)).save(recipeOutput);
+
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(Items.BLACKSTONE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.ASPHALT, 4)
                 .unlockedBy("has_blackstone", has(Items.BLACKSTONE)).save(recipeOutput);
 
