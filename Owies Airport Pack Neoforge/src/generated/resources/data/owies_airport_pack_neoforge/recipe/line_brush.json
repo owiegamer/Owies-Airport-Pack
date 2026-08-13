@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "minecraft:feather"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "FFF",
+    "SSS",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "owies_airport_pack_neoforge:line_brush"
+  }
+}

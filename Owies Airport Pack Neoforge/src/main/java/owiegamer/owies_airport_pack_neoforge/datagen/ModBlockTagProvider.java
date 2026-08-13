@@ -26,7 +26,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.GROUNDLIGHTWHITE.get())
                 .add(ModBlocks.PAINTBUCKETWHITE.get())
                 .add(ModBlocks.PAINTBUCKETYELLOW.get())
-                .add(ModBlocks.ASPHALT.get());
+                .add(ModBlocks.PAINTLINEWHITE.get())
+                .add(ModBlocks.ASPHALT.get())
+                .add(ModBlocks.RUNWAYCONCRETE.get());
 
 
         tag(BlockTags.MINEABLE_WITH_AXE);

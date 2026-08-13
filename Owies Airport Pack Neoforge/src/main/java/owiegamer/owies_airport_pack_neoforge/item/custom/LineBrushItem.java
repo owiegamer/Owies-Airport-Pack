@@ -17,6 +17,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
@@ -28,7 +29,6 @@ import owiegamer.owies_airport_pack_neoforge.block.ModBlocks;
 import owiegamer.owies_airport_pack_neoforge.component.ModDataComponents;
 
 import java.util.List;
-import java.util.Map;
 
 public class LineBrushItem extends Item {
     private static final Logger LOGGER = LogUtils.getLogger();

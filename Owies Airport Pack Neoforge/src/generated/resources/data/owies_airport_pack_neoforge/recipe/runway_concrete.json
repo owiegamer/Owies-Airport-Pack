@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:stone"
+  },
+  "result": {
+    "count": 4,
+    "id": "owies_airport_pack_neoforge:runway_concrete"
+  }
+}

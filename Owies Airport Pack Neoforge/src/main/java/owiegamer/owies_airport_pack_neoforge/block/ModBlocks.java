@@ -68,6 +68,12 @@ import java.util.function.Supplier;
                         .requiresCorrectToolForDrops()
                         .sound(SoundType.STONE)));
 
+        public static final DeferredBlock<Block> RUNWAYCONCRETE  = registerBlock("runway_concrete",
+                () -> new Block(BlockBehaviour.Properties.of()
+                        .strength(4f)
+                        .requiresCorrectToolForDrops()
+                        .sound(SoundType.STONE)));
+
 
         public static final DeferredBlock<PaintLine> PAINTLINEYELLOW = registerBlock("paint_line_yellow",
                 () -> new PaintLine(BlockBehaviour.Properties.of()
