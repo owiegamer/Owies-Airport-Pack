@@ -25,7 +25,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput) {
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.GROUNDLIGHTRED.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.GROUNDLIGHTRED.get(), 4)
                 .pattern("   ")
                 .pattern(" G ")
                 .pattern("ASA")
@@ -34,7 +34,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('G', Blocks.RED_STAINED_GLASS)
                 .unlockedBy("has_glowstone", has(Blocks.GLOWSTONE)).save(recipeOutput);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.GROUNDLIGHTGREEN.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.GROUNDLIGHTGREEN.get(),4)
                 .pattern("   ")
                 .pattern(" G ")
                 .pattern("ASA")
@@ -43,7 +43,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('G', Blocks.GREEN_STAINED_GLASS)
                 .unlockedBy("has_glowstone", has(Blocks.GLOWSTONE)).save(recipeOutput);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.GROUNDLIGHTBLUE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.GROUNDLIGHTBLUE.get(),4)
                 .pattern("   ")
                 .pattern(" G ")
                 .pattern("ASA")
@@ -52,7 +52,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('G', Blocks.BLUE_STAINED_GLASS)
                 .unlockedBy("has_glowstone", has(Blocks.GLOWSTONE)).save(recipeOutput);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.GROUNDLIGHTWHITE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.GROUNDLIGHTWHITE.get(),4)
                 .pattern("   ")
                 .pattern(" G ")
                 .pattern("ASA")
