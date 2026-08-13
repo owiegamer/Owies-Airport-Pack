@@ -114,6 +114,15 @@ import java.util.function.Supplier;
                         .sound(SoundType.STONE)));
 
 
+        public static final DeferredBlock<Block> RADAR = registerBlock("radar",
+                () -> new PaintBucketBlock(BlockBehaviour.Properties.of()
+                        .strength(4f)
+                        .dynamicShape()
+                        .noOcclusion()
+                        .requiresCorrectToolForDrops()
+                        .sound(SoundType.STONE)));
+
+
 
 
 

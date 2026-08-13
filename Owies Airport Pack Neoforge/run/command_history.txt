@@ -43,3 +43,8 @@
 //line owies_airport_pack_neoforge:ground_light_white
 /time set night
 //set owies_airport_pack_neoforge:runway_concrete
+/time set day
+/time set night
+/time set day
+/weather clear
+/give Dev owies_airport_pack_neoforge:radar
