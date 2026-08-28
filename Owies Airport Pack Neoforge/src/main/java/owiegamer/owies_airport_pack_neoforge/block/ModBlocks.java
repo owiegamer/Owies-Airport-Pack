@@ -25,10 +25,6 @@ import java.util.function.Supplier;
         public static final DeferredRegister.Blocks BLOCKS =
                 DeferredRegister.createBlocks(OwiesAirportPackNeoforge.MOD_ID);
 
-        public static final boolean ENABLE_SCREEN_RADIO_FEATURES = false;
-
-
-
 
         public static final DeferredBlock<GroundLight> GROUNDLIGHTRED = registerBlock("ground_light_red",
                 () -> new GroundLight(BlockBehaviour.Properties.of()
