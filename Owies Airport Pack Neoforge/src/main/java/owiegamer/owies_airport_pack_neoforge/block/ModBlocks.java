@@ -4,6 +4,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.MapColor;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -70,12 +71,14 @@ import java.util.function.Supplier;
                 () -> new Block(BlockBehaviour.Properties.of()
                         .strength(4f)
                         .requiresCorrectToolForDrops()
+                        .mapColor(MapColor.COLOR_GRAY)
                         .sound(SoundType.STONE)));
 
         public static final DeferredBlock<Block> RUNWAYCONCRETE  = registerBlock("runway_concrete",
                 () -> new Block(BlockBehaviour.Properties.of()
                         .strength(4f)
                         .requiresCorrectToolForDrops()
+                        .mapColor(MapColor.COLOR_LIGHT_GRAY)
                         .sound(SoundType.STONE)));
 
 
@@ -85,6 +88,7 @@ import java.util.function.Supplier;
                         .dynamicShape()
                         .requiresCorrectToolForDrops()
                         .noLootTable()
+                        .mapColor(MapColor.COLOR_YELLOW)
                         .noOcclusion()
                         .noCollission()
                         .instabreak()
@@ -96,6 +100,7 @@ import java.util.function.Supplier;
                         .dynamicShape()
                         .requiresCorrectToolForDrops()
                         .noLootTable()
+                        .mapColor(MapColor.TERRACOTTA_WHITE)
                         .noOcclusion()
                         .noCollission()
                         .instabreak()

@@ -1,6 +1,3 @@
-/give o owies_airport_pack_neoforge:ground_light_green
-/give Dev owies_airport_pack_neoforge:ground_light_green
-/give Dev owies_airport_pack_neoforge:ground_light_red
 /give Dev owies_airport_pack_neoforge:ground_light_blue
 /give Dev owies_airport_pack_neoforge:ground_light_white
 /time set night
@@ -48,3 +45,6 @@
 /give Dev owies_airport_pack_neoforge:paint_line_yellow
 /give Dev owies_airport_pack_neoforge:paint_line_white1
 /give Dev owies_airport_pack_neoforge:paint_line_white
+/time set day
+//set owies_airport_pack_neoforge:asphalt
+//set owies_airport_pack_neoforge:runway_concrete
