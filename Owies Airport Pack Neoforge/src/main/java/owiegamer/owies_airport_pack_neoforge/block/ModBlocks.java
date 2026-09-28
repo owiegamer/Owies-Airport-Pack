@@ -36,6 +36,7 @@ import java.util.function.Supplier;
                         .lightLevel(state -> 12)
                         .requiresCorrectToolForDrops()
                         .noOcclusion()
+                        .noCollission()
                         .sound(SoundType.METAL)));
 
         public static final DeferredBlock<GroundLight> GROUNDLIGHTGREEN = registerBlock("ground_light_green",
@@ -44,6 +45,7 @@ import java.util.function.Supplier;
                         .lightLevel(state -> 12)
                         .requiresCorrectToolForDrops()
                         .noOcclusion()
+                        .noCollission()
                         .sound(SoundType.METAL)));
 
         public static final DeferredBlock<GroundLight> GROUNDLIGHTBLUE = registerBlock("ground_light_blue",
@@ -52,6 +54,7 @@ import java.util.function.Supplier;
                         .lightLevel(state -> 12)
                         .requiresCorrectToolForDrops()
                         .noOcclusion()
+                        .noCollission()
                         .sound(SoundType.METAL)));
 
         public static final DeferredBlock<GroundLight> GROUNDLIGHTWHITE = registerBlock("ground_light_white",
@@ -60,6 +63,7 @@ import java.util.function.Supplier;
                         .lightLevel(state -> 12)
                         .requiresCorrectToolForDrops()
                         .noOcclusion()
+                        .noCollission()
                         .sound(SoundType.METAL)));
 
         public static final DeferredBlock<Block> ASPHALT = registerBlock("asphalt",
@@ -114,13 +118,13 @@ import java.util.function.Supplier;
                         .sound(SoundType.STONE)));
 
 
-        public static final DeferredBlock<Block> RADAR = registerBlock("radar",
-                () -> new PaintBucketBlock(BlockBehaviour.Properties.of()
-                        .strength(4f)
-                        .dynamicShape()
-                        .noOcclusion()
-                        .requiresCorrectToolForDrops()
-                        .sound(SoundType.STONE)));
+//        public static final DeferredBlock<Block> RADAR = registerBlock("radar",
+//                () -> new PaintBucketBlock(BlockBehaviour.Properties.of()
+//                        .strength(4f)
+//                        .dynamicShape()
+//                        .noOcclusion()
+//                        .requiresCorrectToolForDrops()
+//                        .sound(SoundType.STONE)));
 
 
 

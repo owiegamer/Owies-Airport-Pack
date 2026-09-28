@@ -26,6 +26,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.GROUNDLIGHTBLUE);
                         output.accept(ModBlocks.GROUNDLIGHTWHITE);
                         output.accept(ModBlocks.ASPHALT);
+                        output.accept(ModBlocks.RUNWAYCONCRETE);
                         output.accept(ModItems.LINEBRUSH);
                         output.accept(ModBlocks.PAINTBUCKETYELLOW);
                         output.accept(ModBlocks.PAINTBUCKETWHITE);

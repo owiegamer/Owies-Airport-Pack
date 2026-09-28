@@ -1,6 +1,7 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
+    "particle": "owies_airport_pack_neoforge:block/asphalt",
     "all": "owies_airport_pack_neoforge:block/asphalt"
   }
 }
