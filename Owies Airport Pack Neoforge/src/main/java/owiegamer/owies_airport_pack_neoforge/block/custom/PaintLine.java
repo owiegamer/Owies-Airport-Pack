@@ -5,7 +5,9 @@ import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
@@ -40,6 +42,20 @@ public class PaintLine extends Block {
     public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
         return SHAPE;
     }
+
+    @Override
+    public boolean canSurvive(BlockState state, LevelReader level, BlockPos pos) {
+        // Get the position of the block directly below
+        BlockPos belowPos = pos.below();
+        BlockState belowState = level.getBlockState(belowPos);
+
+        // Require the block below to be solid (or check for a specific block like Blocks.STONE)
+        return belowState.isSolidRender(level, belowPos);
+    }
+
+
+
+
 
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {
@@ -107,6 +123,11 @@ public class PaintLine extends Block {
         boolean east = false;
         boolean west = false;
         Block lineBlock = getLineBlock();
+
+        if (direction == Direction.DOWN && !state.canSurvive(level, pos)) {
+            return Blocks.AIR.defaultBlockState();
+        }
+
 
         if (level.getBlockState(pos.north()).is(lineBlock)) {
             north = true;
